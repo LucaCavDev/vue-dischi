@@ -20,6 +20,16 @@
       </header>
       <main>
         <div class="contenitore">
+          <div class="selectGenre">
+            <select>
+              <option value="Tutto">Tutta la musica del Mondo</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Metal">Metal</option>
+              <option value="Pop">Pop</option>
+              <option value="Rock">Rock</option>
+            </select>
+          </div>
+
           <ul>
             <li v-for="album in albumList">
               <div class="img">

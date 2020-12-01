@@ -12,7 +12,8 @@
 var app = new Vue ({
   el: '#app',
   data: {
-    albumList: []
+    albumList: [],
+    selectedTags: [],
   },
   //importo i 10 album
   mounted: function () {
@@ -20,5 +21,8 @@ var app = new Vue ({
     .then(risposta => {
       this.albumList = risposta.data.response;;
     })
-  }
+  },
+
 })
+
+// genre
