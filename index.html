@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Cavicchioli vue dischi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="logoDiv">
+          <img src="logo.png">
+        </div>
+
+      </header>
+      <main>
+        <div class="contenitore">
+          <ul>
+            <li v-for="album in albumList">
+              <div class="img">
+                <img :src="album.poster">
+              </div>
+              <div class="title text white">
+                {{album.title}}
+              </div>
+              <div class="autor text grey">
+                {{album.author}}
+              </div>
+              <div class="year text grey">
+                {{album.year}}
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </main>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
