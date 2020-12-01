@@ -20,7 +20,7 @@ header {
   align-items: center;
 }
 .logoDiv {
-  width: 60%;
+  width: 80%;
 }
 .logoDiv > img {
   width: 40px;
@@ -39,7 +39,7 @@ main {
 
 .contenitore {
   height: 90%;
-  width: 50%;
+  width: 70%;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ ul {
 
 li {
   list-style: none;
-  width: calc(60% / 4);
+  width: 150px;
   background-color: #2e3a46;
   padding: 20px;
   margin-left: 5%;
