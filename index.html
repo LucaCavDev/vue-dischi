@@ -23,7 +23,7 @@
           <div class="selectGenre">
             <select v-model="genereSelezionato">
               <!-- la prima opzione è quella di default nel quale il genere selezionato è vuoto e poi si vorrà fare in modo che quando sia così vengano mostrati tutti gli album -->
-              <option :value="genereSelezionato">Tutta la musica del Mondo</option>
+              <option value="">Tutta la musica del Mondo</option>
               <!-- con la seconda opzione in v for, si vuole generare una serie di opzioni, una per ogni genere musicale.
               questi generi vengono presi da albumList(dove sono volori dei singoli album) e messi in arrayGeneri senza ripetersi piu di una volta(vari album hanno lo stesso valore di genre). -->
               <option v-for="genre in arrayGeneri" :value="genre">{{genre}}</option>
